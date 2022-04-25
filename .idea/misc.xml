@@ -4,13 +4,13 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/Warehouse/pom.xml" />
         <option value="$PROJECT_DIR$/AGV/pom.xml" />
         <option value="$PROJECT_DIR$/Assembly/pom.xml" />
+        <option value="$PROJECT_DIR$/Warehouse/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager">
+  <component name="ProjectRootManager" version="2" project-jdk-name="17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="SwUserDefinedSpecifications">

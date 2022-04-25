@@ -5,13 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3eec53e8-03f1-4d82-a1d1-0b3fecefbbf7" name="Changes" comment="setup">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AGV/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AGV/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assembly/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Warehouse/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -44,7 +37,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "17"
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "/home/christian/Desktop/sem4/Project/ST4-ImplementationExamples"
   }
 }]]></component>
   <component name="RunManager">
@@ -71,6 +65,7 @@
       <updated>1650876559567</updated>
       <workItem from="1650876564189" duration="13000" />
       <workItem from="1650877021968" duration="374000" />
+      <workItem from="1650878103942" duration="992000" />
     </task>
     <task id="LOCAL-00001" summary="setup">
       <created>1650877397087</created>
