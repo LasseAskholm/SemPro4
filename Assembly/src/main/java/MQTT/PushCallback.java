@@ -12,11 +12,11 @@ public class PushCallback implements MqttCallback {
 
     @Override
     public void messageArrived(String s, MqttMessage mqttMessage) throws Exception {
-        System.out.println("Topic to recieve message from: "+ s);
-        System.out.println("receive messages QOS: "+ mqttMessage.getQos());
+        System.out.println("Topic to recieve message from: " + s);
+        System.out.println("receive messages QOS: " + mqttMessage.getQos());
         String res = new String(mqttMessage.getPayload());
-        System.out.println("Message content: "+ res);
-
+        System.out.println("Message content: " + res);
+        Thread.sleep(4000);
     }
 
     @Override
