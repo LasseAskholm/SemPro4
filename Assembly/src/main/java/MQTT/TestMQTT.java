@@ -17,6 +17,7 @@ public class TestMQTT {
         String content= "{\"ProcessID\":5555}"; // skal være en json besked ?
         String brokerid="tcp://mqtt.localhost:1883";
         String clientId = "testMQTTClient";
+        
         MemoryPersistence persistence = new MemoryPersistence();
 
         try{
