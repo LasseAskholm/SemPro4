@@ -4,7 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3eec53e8-03f1-4d82-a1d1-0b3fecefbbf7" name="Changes" comment="setup" />
+    <list default="true" id="91cfd74c-1460-410e-b00b-1b63c06d2017" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/SemPro4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SemPro4.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse/src/main/java/SoapClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/Warehouse/src/main/java/SoapClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse/target/jaxws/stale/.80a9cc597b91c5f85132c8b74867294383f3eac3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.annotation.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.ejb.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.jms.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.persistence.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.resource.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.servlet.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.servlet.jsp.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.servlet.jsp.jstl.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.transaction.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/javaee-api-8.0.jar" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,10 +39,17 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="28Hbed0eRqRHedCrkNHHK2dHeli" />
+  <component name="ProjectId" id="28NcIK5EMHs9ZiW9eevtc9Wnm6N" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -31,26 +57,63 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Assembly" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/atj/github/SemPro4/Warehouse/src/main/resources/javaee-api-6.0.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2186002&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Warehouse/src/main/resources" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.SoapClient">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="AGV" />
+      <module name="Warehouse" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SoapClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SoapClient" />
+      <module name="Warehouse" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestClass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Warehouse" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestClass" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestClass.init" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Warehouse" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestClass" />
+      <option name="METHOD_NAME" value="init" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SoapClient" />
+        <item itemvalue="JUnit.TestClass.init" />
+        <item itemvalue="JUnit.TestClass" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -58,23 +121,16 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="3eec53e8-03f1-4d82-a1d1-0b3fecefbbf7" name="Changes" comment="" />
-      <created>1650876559567</created>
+      <changelist id="91cfd74c-1460-410e-b00b-1b63c06d2017" name="Changes" comment="" />
+      <created>1651060408305</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1650876559567</updated>
-      <workItem from="1650876564189" duration="13000" />
-      <workItem from="1650877021968" duration="374000" />
-      <workItem from="1650878103942" duration="1670000" />
+      <updated>1651060408305</updated>
+      <workItem from="1651060412269" duration="3322000" />
+      <workItem from="1651063751791" duration="830000" />
+      <workItem from="1651064599729" duration="1546000" />
+      <workItem from="1651066163790" duration="594000" />
     </task>
-    <task id="LOCAL-00001" summary="setup">
-      <created>1650877397087</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1650877397087</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -90,10 +146,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="setup" />
   </component>
 </project>

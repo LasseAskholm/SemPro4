@@ -1,19 +1,24 @@
 import SOAPServices.IEmulatorService;
+import SOAPServices.IEmulatorService_Service;
 
-public class SoapClient implements IEmulatorService {
+public class SoapClient{
 
-    @Override
-    public String pickItem(int trayId) {
-        return null;
+    private IEmulatorService_Service service;
+    private IEmulatorService emulatorService;
+    public SoapClient() {
+
+
+        service = new IEmulatorService_Service();
+
+        emulatorService = service.getBasicHttpBindingIEmulatorService();
+
+        System.out.println(emulatorService.getInventory());
+
+
     }
 
-    @Override
-    public String insertItem(int trayId, String name) {
-        return null;
+    public static void main(String[] args) {
+        SoapClient soapClient = new SoapClient();
     }
 
-    @Override
-    public String getInventory() {
-        return null;
-    }
 }
