@@ -15,9 +15,10 @@ public class AssemblyMQTT {
     private final String PUB_TOPIC = "emulator/operation";
     private final String BROKER_ID = "tcp://mqtt.localhost:1883";
     private static String CLIENT_ID = "AssemblyMQTT";
+    private static AssemblyMQTT MQTT_instance = null;
 
     MqttClient client;
-    public AssemblyMQTT() throws MqttException {
+    private AssemblyMQTT() throws MqttException {
         MemoryPersistence persistence = new MemoryPersistence();
         client = new MqttClient(BROKER_ID,CLIENT_ID,persistence);
     }
@@ -51,6 +52,28 @@ public class AssemblyMQTT {
         mqttMessage.setQos(2);
 
         client.publish(PUB_TOPIC,mqttMessage);
+    }
+
+    public static AssemblyMQTT getInstance() throws MqttException {
+        if (MQTT_instance == null) {
+            MQTT_instance = new AssemblyMQTT();
+        }
+        return MQTT_instance;
+    }
+
+    public String removeChar(String s) {
+        s = s.substring(1,s.length()-1);
+
+        return s;
+    }
+    public String[] processMessage(String message) {
+        String s = removeChar(message);
+        String[] content = s.split(",");
+        for (int i = 0;i<content.length;i++) {
+            System.out.println(content[i]);
+            System.out.println("\n");
+        }
+        return content;
     }
 
     public void disconnectClient() throws MqttException {
