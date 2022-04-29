@@ -7,6 +7,7 @@ import org.eclipse.paho.client.mqttv3.MqttMessage;
 import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
 
 import java.nio.charset.StandardCharsets;
+import java.sql.Timestamp;
 
 
 public class AssemblyMQTT {
@@ -17,9 +18,11 @@ public class AssemblyMQTT {
     private static String CLIENT_ID = "AssemblyMQTT";
     private final String[] topicArray= {SUB_TOPIC2,SUB_TOPIC};
     private static AssemblyMQTT MQTT_instance = null;
+    private static String[] content;
 
     MqttClient client;
     private AssemblyMQTT() throws MqttException {
+        content = new String[3];
         MemoryPersistence persistence = new MemoryPersistence();
         client = new MqttClient(BROKER_ID,CLIENT_ID,persistence);
     }
@@ -44,14 +47,15 @@ public class AssemblyMQTT {
 
     }
 
-
-
     public void publishMessage(int message) throws MqttException {
-        String s = "{\"ProcessID\":"+ message +"}";
-        MqttMessage mqttMessage = new MqttMessage(s.getBytes(StandardCharsets.UTF_8));
-        // qos er enten 0,1,2. Vi skal altid vælge to fordi det sikrer at beskeden altid bliver sendt 1 gang.
-        mqttMessage.setQos(2);
-        client.publish(PUB_TOPIC,mqttMessage);
+
+            String s = "{\"ProcessID\":"+ message +"}";
+            MqttMessage mqttMessage = new MqttMessage(s.getBytes(StandardCharsets.UTF_8));
+            // qos er enten 0,1,2. Vi skal altid vælge to fordi det sikrer at beskeden altid bliver sendt 1 gang.
+            mqttMessage.setQos(2);
+            client.publish(PUB_TOPIC,mqttMessage);
+
+
     }
 
     public static AssemblyMQTT getInstance() throws MqttException {
@@ -66,14 +70,13 @@ public class AssemblyMQTT {
 
         return s;
     }
-    public String[] processMessage(String message) {
+    public void processMessage(String message) {
         String s = removeChar(message);
-        String[] content = s.split(",");
+        content = s.split(",");
         for (int i = 0;i<content.length;i++) {
             System.out.println(content[i]);
             System.out.println("\n");
         }
-        return content;
     }
 
     public void disconnectClient() throws MqttException {
@@ -81,4 +84,22 @@ public class AssemblyMQTT {
         client.close();
         System.exit(0);
     }
+
+    public int getLastOperation(){
+        return Integer.parseInt(content[0]);
+    }
+    public int getCurrentOperation(){
+        return Integer.parseInt(content[1]);
+    }
+    public int getAssemblyStationState(){
+        return Integer.parseInt(content[2]);
+    }
+    public String getAssemblyTimeStamp(){
+        return content[3];
+    }
+    public boolean isAssemblyReady(){
+        return getCurrentOperation()==0;
+    }
+
+
 }

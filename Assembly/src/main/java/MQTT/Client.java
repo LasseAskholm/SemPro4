@@ -7,6 +7,6 @@ public class Client {
         AssemblyMQTT instance = AssemblyMQTT.getInstance();
 
         instance.connect();
-        instance.publishMessage(100);
+        instance.publishMessage(9999);
     }
 }

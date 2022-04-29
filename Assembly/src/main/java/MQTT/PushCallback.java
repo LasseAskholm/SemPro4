@@ -19,7 +19,7 @@ public class PushCallback implements MqttCallback {
         String res = new String(mqttMessage.getPayload());
         //System.out.println("Message content: " + res);
         instance.processMessage(res);
-        Thread.sleep(4000);
+        Thread.sleep(6000);
     }
 
     @Override
