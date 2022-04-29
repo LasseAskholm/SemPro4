@@ -7,9 +7,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="AGV" />
-        <module name="Assembly" />
         <module name="Warehouse" />
+        <module name="Assembly" />
+        <module name="WarehouseSpring" />
       </profile>
     </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="WarehouseSpring" options="-parameters" />
+    </option>
   </component>
 </project>
