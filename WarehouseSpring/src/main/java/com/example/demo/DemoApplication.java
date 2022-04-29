@@ -24,19 +24,19 @@ public class DemoApplication {
 		return args -> {
 			if (args.length > 0) {
 				if(args[0].equals("test")){
-					System.out.println("arg0 was test");
+					//System.out.println("arg0 was test");
 				}else if (args[0].equals("getInventory")){
 					GetInventoryResponse response = quoteClient.getInventory();
 					//System.err.println(response.getGetInventoryResult());
-					System.out.println(response.getGetInventoryResult());
+					//System.out.println(response.getGetInventoryResult());
 					returnString = response.getGetInventoryResult();
 				}else if (args[0].equals("insertItem")){
 					InsertItemResponse response = quoteClient.insertItem(args[1], Integer.parseInt(args[2]));
-					System.out.println(response.getInsertItemResult());
+					//System.out.println(response.getInsertItemResult());
 					returnString = response.getInsertItemResult();
 				}else if (args[0].equals("pickItem")){
 					PickItemResponse response = quoteClient.pickItem(Integer.parseInt(args[1]));
-					System.out.println(response.getPickItemResult());
+					//System.out.println(response.getPickItemResult());
 					returnString = response.getPickItemResult() ;
 				}
 			}
@@ -54,5 +54,6 @@ public class DemoApplication {
 
 		System.out.println("Ran success" );
 		System.out.println(response);
+
 	}
 }
