@@ -6,8 +6,8 @@
       <list>
         <option value="$PROJECT_DIR$/AGV/pom.xml" />
         <option value="$PROJECT_DIR$/Assembly/pom.xml" />
-        <option value="$PROJECT_DIR$/Warehouse/pom.xml" />
         <option value="$PROJECT_DIR$/demo/pom.xml" />
+        <option value="$PROJECT_DIR$/WarehouseSpring/pom.xml" />
       </list>
     </option>
   </component>

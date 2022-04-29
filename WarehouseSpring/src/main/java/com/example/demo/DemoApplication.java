@@ -11,8 +11,10 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 public class DemoApplication {
 
+
 	// 	to generate classes run:
 	//  ./mvnw compile
+	// på windows : mvnw compile
 	//  https://spring.io/guides/gs/consuming-web-service/
 
 	private static String returnString;

@@ -5,9 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91cfd74c-1460-410e-b00b-1b63c06d2017" name="Changes" comment="added test class and call function with args">
-      <change beforePath="$PROJECT_DIR$/WarehouseSpring/src/main/java/TestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/WarehouseSpring/src/main/java/TestClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WarehouseSpring/src/main/java/com/example/demo/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/WarehouseSpring/src/main/java/com/example/demo/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WarehouseSpring/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/WarehouseSpring/src/main/java/com/example/demo/DemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse/src/main/java/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse/src/main/java/SOAPServices/GetInventory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse/src/main/java/SOAPServices/GetInventoryResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse/src/main/java/SOAPServices/IEmulatorService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse/src/main/java/SOAPServices/IEmulatorService_Service.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse/src/main/java/SOAPServices/InsertItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse/src/main/java/SOAPServices/InsertItemResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse/src/main/java/SOAPServices/ObjectFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse/src/main/java/SOAPServices/PickItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse/src/main/java/SOAPServices/PickItemResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse/src/main/java/SOAPServices/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Warehouse/src/main/java/SoapClient.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +37,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/WarehouseSpring" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
@@ -49,25 +64,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "/home/atj/github/SemPro4/Warehouse/src/main/resources/javaee-api-6.0.jar",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2186002",
-    "settings.editor.selected.configurable": "configurable.group.editor"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Warehouse/src/main/resources" />
@@ -89,6 +94,8 @@
       </method>
     </configuration>
     <configuration name="TestClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="TestClass" />
       <module name="WarehouseSpring" />
       <method v="2">
@@ -145,6 +152,8 @@
       <workItem from="1651066163790" duration="594000" />
       <workItem from="1651124546245" duration="7000" />
       <workItem from="1651206835962" duration="5239000" />
+      <workItem from="1651219071189" duration="2261000" />
+      <workItem from="1651221576020" duration="405000" />
     </task>
     <task id="LOCAL-00001" summary="added test class and call function with args">
       <created>1651208577985</created>
