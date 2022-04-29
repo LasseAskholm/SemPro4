@@ -13,6 +13,12 @@ public class TestClass {
 
         pickItem        :   arg[0] = "pickItem"
                             arg[1] = trayID (int)
+
+        All args must be passed as strings. Type conversion is handled in application.
+        getResponse returns a String, where only getInventory is data.
+        Pick and insert response is success or faliure
+
+        Have not tested edgecases/faulty input for args
          */
 
 

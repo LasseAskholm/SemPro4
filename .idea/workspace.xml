@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91cfd74c-1460-410e-b00b-1b63c06d2017" name="Changes" comment="added test class and call function with args">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WarehouseSpring/src/main/java/TestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/WarehouseSpring/src/main/java/TestClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WarehouseSpring/src/main/java/com/example/demo/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/WarehouseSpring/src/main/java/com/example/demo/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WarehouseSpring/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/WarehouseSpring/src/main/java/com/example/demo/DemoApplication.java" afterDir="false" />
@@ -145,7 +144,7 @@
       <workItem from="1651064599729" duration="1546000" />
       <workItem from="1651066163790" duration="594000" />
       <workItem from="1651124546245" duration="7000" />
-      <workItem from="1651206835962" duration="4858000" />
+      <workItem from="1651206835962" duration="5239000" />
     </task>
     <task id="LOCAL-00001" summary="added test class and call function with args">
       <created>1651208577985</created>
