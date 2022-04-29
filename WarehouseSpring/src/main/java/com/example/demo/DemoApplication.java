@@ -1,6 +1,8 @@
 package com.example.demo;
 
 import com.example.consumingwebservice.wsdl.GetInventoryResponse;
+import com.example.consumingwebservice.wsdl.InsertItemResponse;
+import com.example.consumingwebservice.wsdl.PickItemResponse;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -25,13 +27,17 @@ public class DemoApplication {
 			if (args.length > 0) {
 				if(args[0] == "test"){
 					System.out.println("arg0 was test");
-				}else{
-					System.out.println("hit else");
-				}
-				if(args[1] == "inventory"){
+				}else if (args[0] == "getInventory"){
 					GetInventoryResponse response = quoteClient.getInventory();
-					System.err.println(response.getGetInventoryResult());
+					//System.err.println(response.getGetInventoryResult());
 					System.out.println(response.getGetInventoryResult());
+				}else if (args[0] == "insertItem"){
+					InsertItemResponse response = quoteClient.insertItem(args[1], Integer.parseInt(args[2]));
+					System.out.println(response.getInsertItemResult());
+				}else if (args[0] == "pickItem"){
+					PickItemResponse response = quoteClient.pickItem(Integer.parseInt(args[1]));
+					System.out.println(response.getPickItemResult());
+
 				}
 
 			}
@@ -39,7 +45,7 @@ public class DemoApplication {
 		};
 	}
 
-	public static void getInventory(String[] args){
+	public static void getResponse(String[] args){
 		SpringApplication.run(DemoApplication.class, args);
 
 	}
