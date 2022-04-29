@@ -15,6 +15,7 @@ public class AssemblyMQTT {
     private final String PUB_TOPIC = "emulator/operation";
     private final String BROKER_ID = "tcp://mqtt.localhost:1883";
     private static String CLIENT_ID = "AssemblyMQTT";
+    private final String[] topicArray= {SUB_TOPIC2,SUB_TOPIC};
     private static AssemblyMQTT MQTT_instance = null;
 
     MqttClient client;
@@ -39,8 +40,8 @@ public class AssemblyMQTT {
         client.connect(options);
 
         //subscribe til topic
-        client.subscribe(SUB_TOPIC,2);
-        client.subscribe(SUB_TOPIC2,2);
+        client.subscribe(topicArray);
+
     }
 
 
@@ -50,7 +51,6 @@ public class AssemblyMQTT {
         MqttMessage mqttMessage = new MqttMessage(s.getBytes(StandardCharsets.UTF_8));
         // qos er enten 0,1,2. Vi skal altid vælge to fordi det sikrer at beskeden altid bliver sendt 1 gang.
         mqttMessage.setQos(2);
-
         client.publish(PUB_TOPIC,mqttMessage);
     }
 

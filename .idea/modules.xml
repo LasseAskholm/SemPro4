@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/SemPro4.iml" filepath="$PROJECT_DIR$/.idea/SemPro4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WarehouseSpring/WarehouseSpring.iml" filepath="$PROJECT_DIR$/WarehouseSpring/WarehouseSpring.iml" />
     </modules>
   </component>
 </project>
