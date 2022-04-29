@@ -40,7 +40,6 @@ public class DemoApplication {
 					System.out.println(response.getPickItemResult());
 					returnString = response.getPickItemResult() ;
 				}
-
 			}
 
 		};
