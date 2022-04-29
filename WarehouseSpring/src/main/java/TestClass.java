@@ -23,15 +23,19 @@ public class TestClass {
         System.out.println("Initial Inventory");
         DemoApplication.getResponse(inventoryRequest);
 
-        DemoApplication.getResponse(pickItemRequest);
+        String pick = DemoApplication.getResponse(pickItemRequest);
 
         System.out.println("Inventory after picked item");
         DemoApplication.getResponse(inventoryRequest);
 
-        DemoApplication.getResponse(insertItemRequest);
+        String insert = DemoApplication.getResponse(insertItemRequest);
 
         System.out.println("Inventory after insert item");
-        DemoApplication.getResponse(inventoryRequest);
+        String inventoryString = DemoApplication.getResponse(inventoryRequest);
 
+
+        System.out.println(pick);
+        System.out.println(insert);
+        System.out.println(inventoryString);
     }
 }

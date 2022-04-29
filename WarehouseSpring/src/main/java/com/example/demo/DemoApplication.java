@@ -15,10 +15,7 @@ public class DemoApplication {
 	//  ./mvnw compile
 	//  https://spring.io/guides/gs/consuming-web-service/
 
-	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
-
-	}
+	private static String returnString;
 
 	@Bean
 	CommandLineRunner lookup(Client quoteClient) {
@@ -31,13 +28,15 @@ public class DemoApplication {
 					GetInventoryResponse response = quoteClient.getInventory();
 					//System.err.println(response.getGetInventoryResult());
 					System.out.println(response.getGetInventoryResult());
+					returnString = response.getGetInventoryResult();
 				}else if (args[0] == "insertItem"){
 					InsertItemResponse response = quoteClient.insertItem(args[1], Integer.parseInt(args[2]));
 					System.out.println(response.getInsertItemResult());
+					returnString = response.getInsertItemResult();
 				}else if (args[0] == "pickItem"){
 					PickItemResponse response = quoteClient.pickItem(Integer.parseInt(args[1]));
 					System.out.println(response.getPickItemResult());
-
+					returnString = response.getPickItemResult() ;
 				}
 
 			}
@@ -45,8 +44,8 @@ public class DemoApplication {
 		};
 	}
 
-	public static void getResponse(String[] args){
+	public static String getResponse(String[] args){
 		SpringApplication.run(DemoApplication.class, args);
-
+		return returnString;
 	}
 }
