@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3eec53e8-03f1-4d82-a1d1-0b3fecefbbf7" name="Changes" comment="setup">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AGV/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AGV/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AGV/src/main/java/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AGV/target/classes/Main.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,16 +34,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Assembly" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-  </component>
-  <component name="RunManager">
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm"
+  }
+}]]></component>
+  <component name="RunManager" selected="Spring Boot.AgvApplication">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="AGV" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AgvApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="AGV" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.AGV.AgvApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -61,6 +76,7 @@
       <workItem from="1650876564189" duration="13000" />
       <workItem from="1650877021968" duration="374000" />
       <workItem from="1650878103942" duration="1670000" />
+      <workItem from="1651651115672" duration="833000" />
     </task>
     <task id="LOCAL-00001" summary="setup">
       <created>1650877397087</created>
