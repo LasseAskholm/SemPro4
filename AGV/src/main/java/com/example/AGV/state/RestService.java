@@ -1,8 +1,12 @@
-package com.example.AGV;
+package com.example.AGV.state;
 
 import org.springframework.boot.web.client.RestTemplateBuilder;
+import org.springframework.http.*;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
+
+import java.io.IOException;
+import java.util.Collections;
 
 @Service
 public class RestService {
