@@ -8,6 +8,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
+import java.util.Arrays;
+import java.util.Objects;
+
 @SpringBootApplication
 public class DemoApplication {
 
@@ -22,20 +25,23 @@ public class DemoApplication {
 	@Bean
 	CommandLineRunner lookup(Client quoteClient) {
 		return args -> {
-
+			System.err.println("Test Err 0");
 			if (args.length > 0) {
-				if(args[0] == "test"){
+				System.out.println("args>0" + Arrays.toString(args));
+				System.err.println("Test Err 1" );
+				if(Objects.equals(args[0], "test")){
 					System.out.println("arg0 was test");
-				}else if (args[0] == "getInventory"){
+				}else if (Objects.equals(args[0], "getInventory")){
 					GetInventoryResponse response = quoteClient.getInventory();
 					//System.err.println(response.getGetInventoryResult());
 					System.out.println(response.getGetInventoryResult());
+					System.err.println(response.getGetInventoryResult());
 					returnString = response.getGetInventoryResult();
-				}else if (args[0] == "insertItem"){
+				}else if (Objects.equals(args[0], "insertItem")){
 					InsertItemResponse response = quoteClient.insertItem(args[1], Integer.parseInt(args[2]));
 					System.out.println(response.getInsertItemResult());
 					returnString = response.getInsertItemResult();
-				}else if (args[0] == "pickItem"){
+				}else if (Objects.equals(args[0], "pickItem")){
 					PickItemResponse response = quoteClient.pickItem(Integer.parseInt(args[1]));
 					System.out.println(response.getPickItemResult());
 					returnString = response.getPickItemResult() ;
@@ -45,8 +51,11 @@ public class DemoApplication {
 		};
 	}
 
-	public static String getResponse(String[] args){
+	public static void main(String[] args){
 		SpringApplication.run(DemoApplication.class, args);
-		return returnString;
+	}
+
+	public static void test(String[] args){
+		main(args);
 	}
 }

@@ -1,7 +1,7 @@
 package com.example.demo;
 
 public class WarehouseFacade {
-
+/*
     private static WarehouseFacade singleton;
 
     public static WarehouseFacade getInstance(){
@@ -43,7 +43,7 @@ public class WarehouseFacade {
         Pick and insert response is success or faliure
 
         Have not tested edgecases/faulty input for args
-         */
+
 
         String[] inventoryRequest = {"getInventory"};
         String[] insertItemRequest = {"insertItem", "Test Name", "2"};
@@ -67,4 +67,6 @@ public class WarehouseFacade {
         System.out.println(insert);
         System.out.println(inventoryString);
     }
+
+ */
 }

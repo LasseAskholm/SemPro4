@@ -15,6 +15,17 @@
             <artifactId>javafx-controls</artifactId>
             <version>11</version>
         </dependency>
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>WarehouseSpring</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-fxml</artifactId>
+            <version>15</version>
+        </dependency>
+
     </dependencies>
     <build>
         <plugins>
