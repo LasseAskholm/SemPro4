@@ -21,10 +21,19 @@ public class AssemblyMQTT {
     private static String[] content;
 
     MqttClient client;
+
+    public static AssemblyMQTT getInstance() throws MqttException {
+        if (MQTT_instance == null) {
+            MQTT_instance = new AssemblyMQTT();
+        }
+        return MQTT_instance;
+    }
+
     private AssemblyMQTT() throws MqttException {
         content = new String[3];
         MemoryPersistence persistence = new MemoryPersistence();
         client = new MqttClient(BROKER_ID,CLIENT_ID,persistence);
+        connect();
     }
 
     public void connect() throws MqttException {
@@ -55,21 +64,8 @@ public class AssemblyMQTT {
             mqttMessage.setQos(2);
             client.publish(PUB_TOPIC,mqttMessage);
 
-
     }
 
-    public static AssemblyMQTT getInstance() throws MqttException {
-        if (MQTT_instance == null) {
-            MQTT_instance = new AssemblyMQTT();
-        }
-        return MQTT_instance;
-    }
-
-    public String removeChar(String s) {
-        s = s.substring(1,s.length()-1);
-
-        return s;
-    }
     public void processMessage(String message) {
         String s = removeChar(message);
         content = s.split(",");
@@ -78,6 +74,14 @@ public class AssemblyMQTT {
             System.out.println("\n");
         }
     }
+
+
+    public String removeChar(String s) {
+        s = s.substring(1,s.length()-1);
+
+        return s;
+    }
+
 
     public void disconnectClient() throws MqttException {
         client.disconnect();

@@ -25,17 +25,13 @@ public class DemoApplication {
 	@Bean
 	CommandLineRunner lookup(Client quoteClient) {
 		return args -> {
-			System.err.println("Test Err 0");
 			if (args.length > 0) {
-				System.out.println("args>0" + Arrays.toString(args));
-				System.err.println("Test Err 1" );
 				if(Objects.equals(args[0], "test")){
 					System.out.println("arg0 was test");
 				}else if (Objects.equals(args[0], "getInventory")){
 					GetInventoryResponse response = quoteClient.getInventory();
 					//System.err.println(response.getGetInventoryResult());
 					System.out.println(response.getGetInventoryResult());
-					System.err.println(response.getGetInventoryResult());
 					returnString = response.getGetInventoryResult();
 				}else if (Objects.equals(args[0], "insertItem")){
 					InsertItemResponse response = quoteClient.insertItem(args[1], Integer.parseInt(args[2]));
@@ -47,7 +43,7 @@ public class DemoApplication {
 					returnString = response.getPickItemResult() ;
 				}
 			}
-
+			System.err.println(returnString);
 		};
 	}
 

@@ -5,6 +5,7 @@ package org.openjfx;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.net.URL;
 import java.util.jar.JarFile;
 
 
@@ -31,7 +32,7 @@ public class Controller {
          */
 
 
-        String filename = String.valueOf(getClass().getResource("/WarehouseSpring-0.0.1-SNAPSHOT.jar"));
+        URL file = getClass().getResource("/WarehouseSpring-0.0.1-SNAPSHOT.jar");
         //String filename = "WarehouseSpring-0.0.1-SNAPSHOT.jar";
         String[] args = new String[]{"getInventory"};
 
@@ -47,11 +48,17 @@ public class Controller {
         System.out.println(in.available());
         */
 
-        Process process = Runtime.getRuntime().exec("java -jar WarehouseSpring-0.0.1-SNAPSHOT.jar getInventory");
+        Process process = Runtime.getRuntime().exec("java -jar " + file.getPath() + " getInventory");
         InputStream in = process.getInputStream();
         InputStream err = process.getErrorStream();
 
-        
+
+        StringBuilder sb = new StringBuilder();
+        for (int ch; (ch = err.read()) != -1; ) {
+            sb.append((char) ch);
+        }
+
+        System.out.println(sb.toString());
 
 
     }
