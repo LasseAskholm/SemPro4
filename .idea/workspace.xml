@@ -6,8 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="3f335fe2-9e4c-4b04-9572-56de4e25949e" name="Changes" comment="clean up + tilføjet en metode som forcer state &quot;2&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AGV/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AGV/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AGV/src/main/java/com/example/AGV/state/StatusController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AGV/src/main/java/com/example/AGV/state/StatusController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AGV/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/AGV/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AGV/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/AGV/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AGV/target/classes/com/example/AGV/state/StatusController.class" beforeDir="false" afterPath="$PROJECT_DIR$/AGV/target/classes/com/example/AGV/state/StatusController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AGV/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/AGV/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AGV/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/AGV/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,20 +49,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.0" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;8a1fe718c2012fac9b92791e7bf03813&quot;
+  }
+}</component>
   <component name="RunManager">
     <configuration name="AgvApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="AGV" />
@@ -76,6 +83,8 @@
       <option name="presentableId" value="Default" />
       <updated>1651826221920</updated>
       <workItem from="1651826223240" duration="8821000" />
+      <workItem from="1652343455773" duration="4019000" />
+      <workItem from="1652347596488" duration="859000" />
     </task>
     <task id="LOCAL-00001" summary="agv demo">
       <created>1651826805233</created>
@@ -112,5 +121,15 @@
     <MESSAGE value="agv demo" />
     <MESSAGE value="clean up + tilføjet en metode som forcer state &quot;2&quot;" />
     <option name="LAST_COMMIT_MESSAGE" value="clean up + tilføjet en metode som forcer state &quot;2&quot;" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.springframework.web.client.HttpClientErrorException$BadRequest" package="org.springframework.web.client" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

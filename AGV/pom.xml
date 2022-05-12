@@ -9,9 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>AGV</artifactId>
+	<artifactId>SpringBootExecutableJar</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>AGV</name>
+	<packaging>jar</packaging>
 	<description>AGV</description>
 	<properties>
 		<java.version>11</java.version>

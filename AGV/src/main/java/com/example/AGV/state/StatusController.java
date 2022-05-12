@@ -12,6 +12,8 @@ import java.net.URL;
 import java.nio.charset.Charset;
 import java.util.Collections;
 
+import static java.lang.Thread.sleep;
+
 @RestController
 @RequestMapping(path = "/v1/status")
 public class StatusController {
@@ -65,6 +67,7 @@ public class StatusController {
     }
 
     //method to force state 2 after put request
+
     public String forceState2(){
         String url = "http://localhost:8082/v1/status";
         // create headers

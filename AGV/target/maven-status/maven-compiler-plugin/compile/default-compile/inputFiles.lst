@@ -1,5 +1,4 @@
-C:\Users\45538\Documents\GitHub\AGV\src\main\java\com\example\AGV\Controller.java
-C:\Users\45538\Documents\GitHub\AGV\src\main\java\com\example\AGV\Status.java
-C:\Users\45538\Documents\GitHub\AGV\src\main\java\com\example\AGV\RestService.java
-C:\Users\45538\Documents\GitHub\AGV\src\main\java\com\example\AGV\AgvApplication.java
-C:\Users\45538\Documents\GitHub\AGV\src\main\java\com\example\AGV\Client.java
+C:\Users\45538\Documents\GitHub\SemPro4\AGV\src\main\java\com\example\AGV\state\StatusController.java
+C:\Users\45538\Documents\GitHub\SemPro4\AGV\src\main\java\com\example\AGV\state\Status.java
+C:\Users\45538\Documents\GitHub\SemPro4\AGV\src\main\java\com\example\AGV\AgvApplication.java
+C:\Users\45538\Documents\GitHub\SemPro4\AGV\src\main\java\com\example\AGV\state\RestService.java
