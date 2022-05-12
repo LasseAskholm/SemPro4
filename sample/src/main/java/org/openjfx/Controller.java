@@ -2,22 +2,28 @@ package org.openjfx;
 
 
 
+import javafx.scene.control.TextArea;
+
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.OutputStream;
-import java.util.jar.JarFile;
+import java.nio.charset.StandardCharsets;
 
 
 public class Controller {
 
 
+    public TextArea text;
+
     public void initialize() throws IOException, InterruptedException {
 
-        callWarehouse();
+        String answer = getInventory();
+
+        this.text.setText(answer);
 
     }
 
-    private void callWarehouse() throws IOException, InterruptedException {
+    private String getInventory() throws IOException, InterruptedException {
 
         /**
          *      getInventory    :   arg[0] = "getInventory"
@@ -31,28 +37,16 @@ public class Controller {
          */
 
 
-        String filename = String.valueOf(getClass().getResource("/WarehouseSpring-0.0.1-SNAPSHOT.jar"));
-        //String filename = "WarehouseSpring-0.0.1-SNAPSHOT.jar";
+        File file = new File("../SemPro4/sample/src/main/resources/WarehouseSpring-0.0.1-SNAPSHOT.jar");
+        String filePath = file.getPath();
+
         String[] args = new String[]{"getInventory"};
 
-/*
-        ProcessBuilder pb = new ProcessBuilder("java", "-jar", filename, "getInventory");
-        Process p = pb.start();
-
-        System.out.println(p.info());
-
-        InputStream in = p.getInputStream();
-        InputStream err = p.getErrorStream();
-
-        System.out.println(in.available());
-        */
-
-        Process process = Runtime.getRuntime().exec("java -jar WarehouseSpring-0.0.1-SNAPSHOT.jar getInventory");
+        Process process = Runtime.getRuntime().exec("java -jar "+ filePath +" " + args[0]);
         InputStream in = process.getInputStream();
         InputStream err = process.getErrorStream();
 
-        
-
+        return new String(err.readAllBytes(), StandardCharsets.UTF_8);
 
     }
 }

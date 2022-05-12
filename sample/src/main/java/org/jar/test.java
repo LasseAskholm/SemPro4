@@ -2,6 +2,7 @@ package org.jar;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
 
 public class test {
 
@@ -15,6 +16,11 @@ public class test {
         InputStream err = process.getErrorStream();
 
         System.out.println(err.available());
+
+        String text = new String(err.readAllBytes(), StandardCharsets.UTF_8);
+
+        System.out.println(text);
+
     }
 
 }
