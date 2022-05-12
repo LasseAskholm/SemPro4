@@ -12,20 +12,24 @@ import java.net.URL;
 import java.nio.charset.Charset;
 import java.util.Collections;
 
+import static java.lang.System.exit;
 import static java.lang.Thread.sleep;
 
 @RestController
-@RequestMapping(path = "/v1/status")
+//@RequestMapping(path = "/v1/status")
 public class StatusController {
     private RestTemplate restTemplate;
 
-
+/*
     @GetMapping
     public void newMain() throws IOException {
         putStatusRequest("MoveToAssemblyOperation",1);
         forceState2();
+        moveToAssemblyOperation();
         getStatusRequest();
     }
+
+ */
 
     //-------------------------------------PUT REQUEST-------------------------------------
     public String putStatusRequest(String name, int setStatus){
@@ -67,7 +71,6 @@ public class StatusController {
     }
 
     //method to force state 2 after put request
-
     public String forceState2(){
         String url = "http://localhost:8082/v1/status";
         // create headers
@@ -93,6 +96,48 @@ public class StatusController {
     }
 
 
+    //-------------------------------------PROGRAMS-------------------------------------
+    public void moveToChargerOperation(){
+        putStatusRequest("MoveToChargerOperation",1);
+        forceState2();
+        System.exit(1);
+    }
+
+    public void moveToAssemblyOperation(){
+        putStatusRequest("MoveToAssemblyOperation",1);
+        forceState2();
+        System.exit(1);
+    }
+
+    public void moveToStorageOperation(){
+        putStatusRequest("MoveToStorageOperation",1);
+        forceState2();
+        System.exit(1);
+    }
+
+    public void putAssemblyOperation(){
+        putStatusRequest("PutAssemblyOperation",1);
+        forceState2();
+        System.exit(1);
+    }
+
+    public void pickAssemblyOperation(){
+        putStatusRequest("PickAssemblyOperation",1);
+        forceState2();
+        System.exit(1);
+    }
+
+    public void pickWarehouseOperation(){
+        putStatusRequest("PickWarehouseOperation",1);
+        forceState2();
+        System.exit(1);
+    }
+
+    public void putWarehouseOperation(){
+        putStatusRequest("PutWarehouseOperation",1);
+        forceState2();
+        System.exit(1);
+    }
 
     //-------------------------------------GET REQUEST-------------------------------------
     public JSONObject getStatusRequest() throws IOException {
