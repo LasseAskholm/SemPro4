@@ -8,9 +8,13 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AGV/src/main/java/com/example/AGV/AgvApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/AGV/src/main/java/com/example/AGV/AgvApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AGV/src/main/java/com/example/AGV/state/StatusController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AGV/src/main/java/com/example/AGV/state/StatusController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AGV/target/SpringBootExecutableJar-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AGV/target/SpringBootExecutableJar-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AGV/target/SpringBootExecutableJar-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/AGV/target/SpringBootExecutableJar-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AGV/target/SpringBootExecutableJar-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/AGV/target/SpringBootExecutableJar-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AGV/target/classes/com/example/AGV/AgvApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/AGV/target/classes/com/example/AGV/AgvApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AGV/target/classes/com/example/AGV/state/StatusController.class" beforeDir="false" afterPath="$PROJECT_DIR$/AGV/target/classes/com/example/AGV/state/StatusController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AGV/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/AGV/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AGV/target/surefire-reports/TEST-com.example.AGV.AgvApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AGV/target/surefire-reports/TEST-com.example.AGV.AgvApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AGV/target/surefire-reports/com.example.AGV.AgvApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/AGV/target/surefire-reports/com.example.AGV.AgvApplicationTests.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,10 +51,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/tarik/AssemblyFX&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;8a1fe718c2012fac9b92791e7bf03813&quot;
+  }
+}</component>
   <component name="RunManager">
     <configuration name="AgvApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="AGV" />
@@ -73,6 +84,8 @@
       <workItem from="1652347596488" duration="859000" />
       <workItem from="1652352850881" duration="311000" />
       <workItem from="1652354357550" duration="2902000" />
+      <workItem from="1652643527788" duration="8429000" />
+      <workItem from="1652689380543" duration="677000" />
     </task>
     <task id="LOCAL-00001" summary="agv demo">
       <created>1651826805233</created>

@@ -41,7 +41,7 @@ public class AgvApplication {
 				} else if (Objects.equals(args[0], "MoveToChargerOperation")) {
 					con.moveToChargerOperation();
 
-				} else if (Objects.equals(args[0], "MoveToAssemblyStation")) {
+				} else if (Objects.equals(args[0], "MoveToAssemblyOperation")) {
 					con.moveToAssemblyOperation();
 
 				} else if (Objects.equals(args[0], "MoveToStorageOperation")) {
@@ -60,7 +60,9 @@ public class AgvApplication {
 					con.putWarehouseOperation();
 
 				} else if (Objects.equals(args[0], "GetStatus")) {
-					con.getStatusRequest();
+					//con.getStatusRequest();
+					System.out.println(con.getStatusRequest());
+					System.exit(1);
 
 				}
 			}

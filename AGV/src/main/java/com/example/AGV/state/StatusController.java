@@ -12,7 +12,6 @@ import java.net.URL;
 import java.nio.charset.Charset;
 import java.util.Collections;
 
-import static java.lang.System.exit;
 import static java.lang.Thread.sleep;
 
 @RestController
@@ -20,7 +19,8 @@ import static java.lang.Thread.sleep;
 public class StatusController {
     private RestTemplate restTemplate;
 
-/*
+
+    /*
     @GetMapping
     public void newMain() throws IOException {
         putStatusRequest("MoveToAssemblyOperation",1);
@@ -29,10 +29,12 @@ public class StatusController {
         getStatusRequest();
     }
 
- */
+     */
+
+
 
     //-------------------------------------PUT REQUEST-------------------------------------
-    public String putStatusRequest(String name, int setStatus){
+    public JSONObject putStatusRequest(String name, int setStatus){
         RestTemplateBuilder rt = new RestTemplateBuilder();
         RestService(rt);
         String url = "http://localhost:8082/v1/status";
@@ -55,12 +57,14 @@ public class StatusController {
         data=data.replace("name","Program name");
         data=data.replace("id","State");
 
-        System.out.println(data);
+        JSONObject dataJson = new JSONObject(data);
 
-        HttpEntity<String> newEntity = new HttpEntity<>(data, headers);
+        //System.out.println(data);
+
+        HttpEntity<JSONObject> newEntity = new HttpEntity<>(dataJson, headers);
 
         // send PUT request to update post
-        ResponseEntity<String> response = this.restTemplate.exchange(url, HttpMethod.PUT, newEntity, String.class);
+        ResponseEntity<JSONObject> response = this.restTemplate.exchange(url, HttpMethod.PUT, newEntity, JSONObject.class);
 
         // check response status code
         if (response.getStatusCode() == HttpStatus.OK) {
@@ -148,7 +152,7 @@ public class StatusController {
             BufferedReader rd = new BufferedReader(new InputStreamReader(is, Charset.forName("UTF-8")));
             String jsonText = readAll(rd);
             JSONObject json = new JSONObject(jsonText);
-            System.out.println(json);
+            //System.out.println(json);
             return json;
         } finally {
             is.close();
