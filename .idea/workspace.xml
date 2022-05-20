@@ -6,11 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="3f335fe2-9e4c-4b04-9572-56de4e25949e" name="Changes" comment="clean up + tilføjet en metode som forcer state &quot;2&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AGV/src/main/java/com/example/AGV/AgvApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/AGV/src/main/java/com/example/AGV/AgvApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AGV/src/main/java/com/example/AGV/state/StatusController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AGV/src/main/java/com/example/AGV/state/StatusController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AGV/target/SpringBootExecutableJar-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/AGV/target/SpringBootExecutableJar-0.0.1-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AGV/target/SpringBootExecutableJar-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/AGV/target/SpringBootExecutableJar-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AGV/target/classes/com/example/AGV/AgvApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/AGV/target/classes/com/example/AGV/AgvApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AGV/target/classes/com/example/AGV/state/StatusController.class" beforeDir="false" afterPath="$PROJECT_DIR$/AGV/target/classes/com/example/AGV/state/StatusController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AGV/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/AGV/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AGV/target/surefire-reports/TEST-com.example.AGV.AgvApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AGV/target/surefire-reports/TEST-com.example.AGV.AgvApplicationTests.xml" afterDir="false" />
@@ -86,6 +84,7 @@
       <workItem from="1652354357550" duration="2902000" />
       <workItem from="1652643527788" duration="8429000" />
       <workItem from="1652689380543" duration="677000" />
+      <workItem from="1653043694134" duration="1874000" />
     </task>
     <task id="LOCAL-00001" summary="agv demo">
       <created>1651826805233</created>

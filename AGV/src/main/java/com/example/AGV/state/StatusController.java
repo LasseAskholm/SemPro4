@@ -34,7 +34,7 @@ public class StatusController {
 
 
     //-------------------------------------PUT REQUEST-------------------------------------
-    public JSONObject putStatusRequest(String name, int setStatus){
+    public String putStatusRequest(String name, int setStatus){
         RestTemplateBuilder rt = new RestTemplateBuilder();
         RestService(rt);
         String url = "http://localhost:8082/v1/status";
@@ -57,14 +57,10 @@ public class StatusController {
         data=data.replace("name","Program name");
         data=data.replace("id","State");
 
-        JSONObject dataJson = new JSONObject(data);
-
-        //System.out.println(data);
-
-        HttpEntity<JSONObject> newEntity = new HttpEntity<>(dataJson, headers);
+        HttpEntity<String> newEntity = new HttpEntity<>(data, headers);
 
         // send PUT request to update post
-        ResponseEntity<JSONObject> response = this.restTemplate.exchange(url, HttpMethod.PUT, newEntity, JSONObject.class);
+        ResponseEntity<String> response = this.restTemplate.exchange(url, HttpMethod.PUT, newEntity, String.class);
 
         // check response status code
         if (response.getStatusCode() == HttpStatus.OK) {
