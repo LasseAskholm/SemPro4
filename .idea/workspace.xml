@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f335fe2-9e4c-4b04-9572-56de4e25949e" name="Changes" comment="clean up + tilføjet en metode som forcer state &quot;2&quot;">
+    <list default="true" id="3f335fe2-9e4c-4b04-9572-56de4e25949e" name="Changes" comment="cleanup">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AGV/src/main/java/com/example/AGV/state/StatusController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AGV/src/main/java/com/example/AGV/state/StatusController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AGV/target/SpringBootExecutableJar-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/AGV/target/SpringBootExecutableJar-0.0.1-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AGV/target/SpringBootExecutableJar-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/AGV/target/SpringBootExecutableJar-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AGV/target/classes/com/example/AGV/AgvApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/AGV/target/classes/com/example/AGV/AgvApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AGV/target/classes/com/example/AGV/state/StatusController.class" beforeDir="false" afterPath="$PROJECT_DIR$/AGV/target/classes/com/example/AGV/state/StatusController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AGV/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/AGV/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AGV/target/surefire-reports/TEST-com.example.AGV.AgvApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AGV/target/surefire-reports/TEST-com.example.AGV.AgvApplicationTests.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AGV/target/surefire-reports/com.example.AGV.AgvApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/AGV/target/surefire-reports/com.example.AGV.AgvApplicationTests.txt" afterDir="false" />
     </list>
@@ -84,7 +84,7 @@
       <workItem from="1652354357550" duration="2902000" />
       <workItem from="1652643527788" duration="8429000" />
       <workItem from="1652689380543" duration="677000" />
-      <workItem from="1653043694134" duration="1874000" />
+      <workItem from="1653043694134" duration="2925000" />
     </task>
     <task id="LOCAL-00001" summary="agv demo">
       <created>1651826805233</created>
@@ -100,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651834093997</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="cleanup">
+      <created>1653045591902</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1653045591902</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,7 +127,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="agv demo" />
     <MESSAGE value="clean up + tilføjet en metode som forcer state &quot;2&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="clean up + tilføjet en metode som forcer state &quot;2&quot;" />
+    <MESSAGE value="cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleanup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

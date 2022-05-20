@@ -6,32 +6,12 @@ import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.http.*;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
-
 import java.io.*;
-import java.net.URL;
-import java.nio.charset.Charset;
 import java.util.Collections;
 
-import static java.lang.Thread.sleep;
-
 @RestController
-//@RequestMapping(path = "/v1/status")
 public class StatusController {
     private RestTemplate restTemplate;
-
-
-    /*
-    @GetMapping
-    public void newMain() throws IOException {
-        putStatusRequest("MoveToAssemblyOperation",1);
-        forceState2();
-        moveToAssemblyOperation();
-        getStatusRequest();
-    }
-
-     */
-
-
 
     //-------------------------------------PUT REQUEST-------------------------------------
     public String putStatusRequest(String name, int setStatus){
@@ -95,7 +75,6 @@ public class StatusController {
         }
     }
 
-
     //-------------------------------------PROGRAMS-------------------------------------
     public void moveToChargerOperation(){
         putStatusRequest("MoveToChargerOperation",1);
@@ -140,32 +119,14 @@ public class StatusController {
     }
 
     //-------------------------------------GET REQUEST-------------------------------------
-    public JSONObject getStatusRequest() throws IOException {
+    public String getStatusRequest() throws IOException {
+        RestTemplateBuilder rt = new RestTemplateBuilder();
+        RestService(rt);
         String url = "http://localhost:8082/v1/status";
-
-        InputStream is = new URL(url).openStream();
-        try {
-            BufferedReader rd = new BufferedReader(new InputStreamReader(is, Charset.forName("UTF-8")));
-            String jsonText = readAll(rd);
-            JSONObject json = new JSONObject(jsonText);
-            //System.out.println(json);
-            return json;
-        } finally {
-            is.close();
-        }
+        return this.restTemplate.getForObject(url, String.class);
     }
 
-    //read all for get request
-    private static String readAll(Reader rd) throws IOException {
-        StringBuilder sb = new StringBuilder();
-        int cp;
-        while ((cp = rd.read()) != -1) {
-            sb.append((char) cp);
-        }
-        return sb.toString();
-    }
-
-    //rest service method
+    //-------------------------------------REST SERVICE-------------------------------------
     public void RestService(RestTemplateBuilder restTemplateBuilder) {
         this.restTemplate = restTemplateBuilder.build();
     }
