@@ -34,7 +34,6 @@ public class Client extends WebServiceGatewaySupport {
         InsertItemResponse response = (InsertItemResponse) getWebServiceTemplate()
                 .marshalSendAndReceive("http://localhost:8081/Service.asmx", request);
 
-
         return response;
     }
 

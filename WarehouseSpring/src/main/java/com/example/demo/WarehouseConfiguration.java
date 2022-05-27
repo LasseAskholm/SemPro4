@@ -6,6 +6,8 @@ import org.springframework.oxm.jaxb.Jaxb2Marshaller;
 
 @Configuration
 public class WarehouseConfiguration {
+
+    //Auto-generate classes based on what the service is providing
     @Bean
     public Jaxb2Marshaller marshaller() {
         Jaxb2Marshaller marshaller = new Jaxb2Marshaller();
@@ -24,3 +26,4 @@ public class WarehouseConfiguration {
         return client;
     }
 }
+

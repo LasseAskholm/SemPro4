@@ -14,7 +14,6 @@ import java.util.Objects;
 @SpringBootApplication
 public class DemoApplication {
 
-
 	// 	to generate classes run:
 	//  ./mvnw compile
 	// på windows : mvnw compile
@@ -22,40 +21,26 @@ public class DemoApplication {
 
 	private static String returnString;
 
+	//Checks the arguments in the commandline when run and executes appropriate actions.
 	@Bean
 	CommandLineRunner lookup(Client quoteClient) {
 		return args -> {
-			System.err.println("Test Err 0");
 			if (args.length > 0) {
-				System.out.println("args>0" + Arrays.toString(args));
-				System.err.println("Test Err 1" );
-				if(Objects.equals(args[0], "test")){
-					System.out.println("arg0 was test");
-				}else if (Objects.equals(args[0], "getInventory")){
-					GetInventoryResponse response = quoteClient.getInventory();
-					//System.err.println(response.getGetInventoryResult());
-					System.out.println(response.getGetInventoryResult());
-					System.err.println(response.getGetInventoryResult());
-					returnString = response.getGetInventoryResult();
+				if (Objects.equals(args[0], "getInventory")){
+					System.err.println("Received inventory operation.");
 				}else if (Objects.equals(args[0], "insertItem")){
 					InsertItemResponse response = quoteClient.insertItem(args[1], Integer.parseInt(args[2]));
-					System.out.println(response.getInsertItemResult());
-					returnString = response.getInsertItemResult();
+					System.err.println(response.getInsertItemResult());
 				}else if (Objects.equals(args[0], "pickItem")){
 					PickItemResponse response = quoteClient.pickItem(Integer.parseInt(args[1]));
-					System.out.println(response.getPickItemResult());
-					returnString = response.getPickItemResult() ;
+					System.err.println(response.getPickItemResult());
 				}
+				GetInventoryResponse response = quoteClient.getInventory();
+				System.err.println(response.getGetInventoryResult());
 			}
-
 		};
 	}
-
 	public static void main(String[] args){
 		SpringApplication.run(DemoApplication.class, args);
-	}
-
-	public static void test(String[] args){
-		main(args);
 	}
 }
