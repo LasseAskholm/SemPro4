@@ -60,10 +60,8 @@ public class AgvApplication {
 					con.putWarehouseOperation();
 
 				} else if (Objects.equals(args[0], "GetStatus")) {
-					//con.getStatusRequest();
 					System.out.println(con.getStatusRequest());
 					System.exit(1);
-
 				}
 			}
 		};

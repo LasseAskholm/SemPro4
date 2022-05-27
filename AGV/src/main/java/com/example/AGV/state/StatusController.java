@@ -30,8 +30,7 @@ public class StatusController {
 
         // make status object
         Gson gson = new Gson();
-        String jsonStatus = gson.toJson(status);
-        String data= jsonStatus.toString();
+        String data= gson.toJson(status);
 
         // change the names
         data=data.replace("name","Program name");
@@ -40,7 +39,8 @@ public class StatusController {
         HttpEntity<String> newEntity = new HttpEntity<>(data, headers);
 
         // send PUT request to update post
-        ResponseEntity<String> response = this.restTemplate.exchange(url, HttpMethod.PUT, newEntity, String.class);
+        ResponseEntity<String> response = this.restTemplate.exchange(url, HttpMethod.PUT,
+                newEntity, String.class);
 
         // check response status code
         if (response.getStatusCode() == HttpStatus.OK) {
@@ -60,14 +60,13 @@ public class StatusController {
         // set `accept` header
         headers.setAccept(Collections.singletonList(MediaType.APPLICATION_JSON));
         // create a status JSON
-        String jsonString = String.valueOf(new JSONObject().put("State",2));
-        String data = jsonString.toString();
-        System.out.println(data);
+        String data = String.valueOf(new JSONObject().put("State",2));
 
         HttpEntity<String> newEntity = new HttpEntity<>(data, headers);
 
         // send PUT request to update post
-        ResponseEntity<String> response = this.restTemplate.exchange(url, HttpMethod.PUT, newEntity, String.class);
+        ResponseEntity<String> response = this.restTemplate.exchange(url, HttpMethod.PUT,
+                newEntity, String.class);
         if (response.getStatusCode() == HttpStatus.OK) {
             return String.valueOf(response);
         } else {
